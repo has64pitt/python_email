@@ -7,13 +7,14 @@ from email.message import EmailMessage
 GMAIL_ADDRESS = os.environ.get('GMAIL_USER')
 GMAIL_PASSWORD = os.environ.get('GMAIL_PASS')
 
-contacts = [GMAIL_ADDRESS, 'another@email.com']
+#contacts = [GMAIL_ADDRESS, 'another@email.com']
+contacts = [GMAIL_ADDRESS]
 
 msg = EmailMessage()
 msg['From'] = GMAIL_ADDRESS
 msg['To'] = contacts
-msg['Cc'] = 'another@email.com'
-msg['Bcc'] = 'another@email.com'
+#msg['Cc'] = 'another@email.com'
+#msg['Bcc'] = 'another@email.com'
 msg['Subject'] = 'test-subject-pic'
 msg.set_content('test-email-body-pic\n Picture attached')
 
