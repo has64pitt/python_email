@@ -1,7 +1,6 @@
 import os
 import mimetypes
 import smtplib
-import imghdr
 from email.message import EmailMessage
 
 GMAIL_ADDRESS = os.environ.get('GMAIL_USER')
@@ -18,9 +17,10 @@ msg['To'] = contacts
 msg['Subject'] = 'test-subject-pic'
 msg.set_content('test-email-body-pic\n Picture attached')
 
+# list of attachments
 files = [
-    'iphone12_slogan.png',
-    'tb_by_state.png'
+    'sample_attachment/iphone12_slogan.png',
+    'sample_attachment/tb_by_state.png'
     ]
 
 for ifile in files:

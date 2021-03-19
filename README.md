@@ -1,2 +1,14 @@
 # python_email
- use python to send email with cc/bcc and attachments
+ Use python standard library to send emails
+
+- Send to multiple users
+- With `cc` and `bcc` capabilities
+- Add attachments
+
+
+
+ 
+
+
+
+
